@@ -31,13 +31,13 @@
                              headerClass="cabecalho"
                              class="tabela">
 
-                    <h:column>
+<!--                    <h:column>
                         <f:facet name="header">
                             <h:outputLabel value="CÓDIGO"/>
                         </f:facet>
 
                         <h:outputLabel value="#{address.endereco_id}"/>                    
-                    </h:column>
+                    </h:column>-->
 
                     <h:column>
                         <f:facet name="header">
@@ -93,12 +93,12 @@
                         <f:facet name="header">
                             <h:outputLabel value="AÇÃO"/>
                         </f:facet>
-
+<!--
                         <h:commandLink value="Detalhe" action="vaiParaDetalhe">
                             <f:setPropertyActionListener target="#{addressController.endereco}" value="#{address}" />
                         </h:commandLink>
 
-     
+     -->
                         <h:commandLink value="Editar" action="vaiParaEditar">
                             <f:setPropertyActionListener target="#{addressController.endereco}" value="#{address}" />
                         </h:commandLink>

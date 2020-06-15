@@ -5,10 +5,17 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
     </h:head>
     <h:body>
-      <h:form>
-            <h1>Editar Endereço</h1>
+        
+        <header>
+              <h1>Editar Endereço</h1>
+        </header>
+        
+        <div class="body">
+               <h:form class="form">
+          
             
             <table>
                 <tbody>
@@ -25,7 +32,7 @@
                         <td> <h:inputText value="#{addressController.endereco.bairro}" maxlength="100" size="20" /> </td>
                     </tr>
                         <tr>
-                        <td> <h:outputLabel value="País"/> </td>
+                        <td> <h:outputLabel value="Cidade"/> </td>
                         <td>  
                             <h:selectOneMenu
                                 value="#{addressController.endereco.cidade_id.cidade_id}"
@@ -53,10 +60,13 @@
                 </tbody>
             </table>
             <br/>
-            <h:commandButton value="Voltar" style="width: 48%" action="voltaParaListagem" />
-            <h:commandButton value="Gravar" style="width: 48%" action="#{addressController.finalizaInclusao()}" />
+            <h:commandButton class="botao" value="Voltar" style="width: 48%" action="voltaParaListagem" />
+            <h:commandButton class="botao" value="Gravar" style="width: 48%" action="#{addressController.finalizaInclusao()}" />
             
         </h:form>
+            
+        </div>
+     
     </h:body>
 </html>
 
